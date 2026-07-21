@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأجهزة - نظام إدارة عناوين IP والأجهزة</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- ===== شريط التنقل ===== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌐</span>
+                <span class="logo-text">IP Manager</span>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">🏠 الرئيسية | Home</a></li>
+                <li><a href="devices.html" class="active">📱 الأجهزة | Devices</a></li>
+                <li><a href="add-device.html">➕ إضافة جهاز | Add Device</a></li>
+                <li><a href="manage.html">⚙️ إدارة | Manage</a></li>
+                <li><a href="contact.html">📞 تواصل | Contact</a></li>
+                <li><a href="#" onclick="logout()" class="logout-link">🚪 تسجيل الخروج | Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== صفحة الأجهزة ===== -->
+    <section class="devices-section">
+        <div class="container">
+            <h2 class="section-title">📱 قائمة الأجهزة</h2>
+            <p class="text-center mb-3" style="color: #6a5a7a;">عرض جميع الأجهزة المسجلة في النظام</p>
+            
+            <div class="devices-grid" id="devicesGrid">
+                <!-- سيتم تعبئتها بواسطة JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== النافذة المنبثقة للتفاصيل ===== -->
+    <div class="modal" id="deviceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📋 تفاصيل الجهاز</h2>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- سيتم تعبئتها بواسطة JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== التذييل ===== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h4>🌐 IP Manager</h4>
+                <p>نظام إدارة عناوين IP والأجهزة</p>
+                <p>IP Device Management System</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة | Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية | Home</a></li>
+                    <li><a href="devices.html">الأجهزة | Devices</a></li>
+                    <li><a href="add-device.html">إضافة جهاز | Add Device</a></li>
+                    <li><a href="manage.html">إدارة | Manage</a></li>
+                    <li><a href="contact.html">تواصل | Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>معلومات | Info</h4>
+                <p>📧 cocacola@gmail.com</p>
+                <p>📞249902897828</p>
+                <p>📍 مدني,القسم الاول جوار فندق كونتينتال</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 نظام إدارة عناوين IP والأجهزة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
